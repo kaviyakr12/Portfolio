@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaviya K R | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: white;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .section {
+      padding: 60px 20px;
+    }
+
+    .section h2 {
+      font-weight: 700;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      color: #ffdd57;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+    .category-box {
+      border-radius: 12px;
+      padding: 30px 20px;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      color: #000;
+      margin-bottom: 40px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .category-box:hover {
+      transform: scale(1.02);
+      background-color: #ffe0b2;
+    }
+
+    .category-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #007bff;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .language-icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .language-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      border-radius: 10px;
+      background: #ffffff;
+      color: #000;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .language-box:hover {
+      transform: translateX(5px);
+      background: #d1ecf1;
+    }
+
+    .language-box i {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .small-box {
+      padding: 5px 10px;
+      font-size: 0.8rem;
+      width: auto !important;
+      min-width: 80px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- About Me -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="text-center section-title">About Me</h2>
+      <h3 class="text-center text-light">Kaviya K R</h3>
+      <p class="text-center lead">Software Developer & Cloud Enthusiast</p>
+      <p class="text-center">I am an innovative and versatile entry-level Software Engineer with a solid foundation in programming languages and a comprehensive understanding of the web development cycle. I aim to contribute to intuitive, user-friendly software solutions while continuously learning cloud platforms.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="text-center section-title">Skills</h2>
+
+      <!-- Programming Languages -->
+      <div class="category-box">
+        <div class="category-title">Programming Languages</div>
+        <div class="language-icons">
+          <div class="language-box"><i class="fab fa-python" style="color: #306998;"></i><span>Python</span></div>
+          <div class="language-box"><i class="fas fa-code" style="color: #555;"></i><span>C</span></div>
+          <div class="language-box"><i class="fab fa-java" style="color: #f89820;"></i><span>Java</span></div>
+          <div class="language-box"><i class="fab fa-js" style="color: #f7df1e;"></i><span>JavaScript</span></div>
+          <div class="language-box"><i class="fab fa-html5" style="color: #e34c26;"></i><span>HTML</span></div>
+          <div class="language-box"><i class="fab fa-css3-alt" style="color: #2965f1;"></i><span>CSS</span></div>
+        </div>
+      </div>
+
+      <!-- Frameworks & Libraries -->
+      <div class="category-box">
+        <div class="category-title">Frameworks & Libraries</div>
+        <div class="language-icons">
+          <div class="language-box"><i class="fas fa-cubes"></i><span>NumPy</span></div>
+          <div class="language-box"><i class="fas fa-chart-line"></i><span>Matplotlib</span></div>
+          <div class="language-box"><i class="fas fa-brain"></i><span>scikit-learn</span></div>
+          <div class="language-box"><i class="fas fa-database"></i><span>pandas</span></div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="category-box">
+        <div class="category-title">Tools</div>
+        <div class="language-icons">
+          <div class="language-box"><i class="fab fa-git-alt"></i><span>Git</span></div>
+          <div class="language-box"><i class="fab fa-github"></i><span>GitHub</span></div>
+          <div class="language-box"><i class="fas fa-code"></i><span>VS Code</span></div>
+          <div class="language-box"><i class="fas fa-cloud"></i><span>GCP</span></div>
+        </div>
+      </div>
+
+      <!-- Platforms -->
+      <div class="category-box">
+        <div class="category-title">Platforms</div>
+        <div class="language-icons">
+          <div class="language-box"><i class="fas fa-book"></i><span>Jupyter Notebook</span></div>
+          <div class="language-box"><i class="fas fa-laptop-code"></i><span>PyCharm</span></div>
+          <div class="language-box"><i class="fas fa-code-branch"></i><span>Eclipse</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <h2 class="text-center section-title">Certifications</h2>
+
+      <!-- AWS Certifications -->
+      <div class="category-box">
+        <div class="category-title">AWS Certifications</div>
+        <div class="row justify-content-center">
+          <div class="col-md-5 language-box bg-white text-dark m-2 text-center"><span>AWS Certified Billing and Cost Management</span></div>
+          <div class="col-md-5 language-box bg-white text-dark m-2 text-center"><span>AWS Certified AMS with Cloud Operating Models</span></div>
+          <div class="col-md-5 language-box bg-white text-dark m-2 text-center"><span>AWS Certified Cloud Essentials</span></div>
+          <div class="col-md-5 language-box bg-white text-dark m-2 text-center"><span>AWS Certified Security Best Practices</span></div>
+        </div>
+      </div>
+
+      <!-- Infosys -->
+      <div class="category-box">
+        <div class="category-title">Infosys Springboard Certifications</div>
+        <div class="row justify-content-center">
+          <div class="col-md-5 language-box bg-white text-dark m-2 text-center"><span>Basics of Python</span></div>
+          <div class="col-md-5 language-box bg-white text-dark m-2 text-center"><span>Introduction to Artificial Intelligence</span></div>
+          <div class="col-md-5 language-box bg-white text-dark m-2 text-center"><span>Blockchain and Hyperledger</span></div>
+        </div>
+      </div>
+
+      <!-- LinkedIn -->
+      <div class="category-box">
+        <div class="category-title">LinkedIn Certifications</div>
+        <div class="row justify-content-center">
+          <div class="col-md-5 language-box bg-white text-dark m-2 text-center"><span>SEO Keyword Strategy</span></div>
+          <div class="col-md-5 language-box bg-white text-dark m-2 text-center"><span>Bitcoin and Other Cryptocurrencies</span></div>
+          <div class="col-md-5 language-box bg-white text-dark m-2 text-center"><span>Cloud Storage Concepts</span></div>
+          <div class="col-md-5 language-box bg-white text-dark m-2 text-center"><span>Git Essential Training</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coding Proficiency -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <h2 class="text-center">Coding Proficiency</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+          <p><strong>LeetCode</strong><br><a href="https://leetcode.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" width="40"></a><br>600+ Problems</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <p><strong>GeeksforGeeks</strong><br><a href="https://geeksforgeeks.org" target="_blank"><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" width="40"></a><br>200+ Problems</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <p><strong>HackerRank</strong><br><a href="https://hackerrank.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png" width="40"></a><br>100+ Problems</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="text-center section-title">Projects</h2>
+
+      <!-- Project 1 -->
+      <div class="category-box">
+        <div class="category-title">Hand Gesture Games</div>
+        <p>Implemented real-time hand tracking with 92% accuracy. Enhanced gesture recognition speed by using MediaPipe. Automated game controls via PyInput, with improved response.</p>
+        <div class="language-icons d-flex flex-wrap justify-content-center">
+          <div class="language-box m-1 small-box">Python</div>
+          <div class="language-box m-1 small-box">OpenCV</div>
+          <div class="language-box m-1 small-box">MediaPipe</div>
+          <div class="language-box m-1 small-box">PyInput</div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="category-box">
+        <div class="category-title">Photographer’s Website</div>
+        <p>Designed responsive layout, boosting user engagement. Customized gallery layout and hover effects, enhancing aesthetic appeal and usability. Integrated smooth animations, enhanced UI experience.</p>
+        <div class="language-icons d-flex flex-wrap justify-content-center">
+          <div class="language-box m-1 small-box">HTML</div>
+          <div class="language-box m-1 small-box">CSS</div>
+          <div class="language-box m-1 small-box">JavaScript</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section class="section" id="resume">
+    <div class="container text-center">
+      <h2 class="text-center section-title">Resume</h2>
+      <a href="https://drive.google.com/file/d/1H5m0A1DubRVwxtSrGyL_W1GRvULHozCZ/view?usp=drive_link" target="_blank" class="btn btn-primary">View My Resume</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="text-center">Contact Me</h2>
+      <form class="mx-auto" style="max-width: 500px;">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Subject" required>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-success px-4 py-2">Submit</button>
+        </div>
+      </form>
+      <div class="text-center mt-4">
+        <a href="mailto:kaviyakr12@gmail.com" class="text-white mx-3"><i class="fas fa-envelope fa-lg"></i></a>
+        <a href="https://www.linkedin.com/in/kaviyaramesh/" target="_blank" class="text-white mx-3"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="https://github.com/kaviyakr12" target="_blank" class="text-white mx-3"><i class="fab fa-github fa-lg"></i></a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
