@@ -17,14 +17,21 @@
       color: white;
     }
 
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+    /* Light Theme Styles */
+    body.light-theme {
+      background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+
+    /* Dark Theme Styles */
+    body.dark-theme {
+      background-color: #4a4a4a; /* Dark grey background */
+      color: white;
     }
 
     .section {
       padding: 60px 20px;
+      background-color: inherit; /* Inherit background color from body */
     }
 
     .section h2 {
@@ -97,17 +104,53 @@
       min-width: 80px;
       text-align: center;
     }
+
+    /* Toggle Button Styles */
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: white; /* White background */
+      color: black; /* Black text */
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    /* Footer Styles */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #203a43;
+      color: white;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Coding Proficiency Styles */
+    .coding-proficiency {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
   </style>
 </head>
-<body>
+<body class="light-theme">
+
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle" id="themeToggle">Theme</button>
 
   <!-- About Me -->
   <section class="section" id="about">
     <div class="container">
       <h2 class="text-center section-title">About Me</h2>
       <h3 class="text-center text-light">Kaviya K R</h3>
-      <p class="text-center lead">Software Developer & Cloud Enthusiast</p>
-      <p class="text-center">I am an innovative and versatile entry-level Software Engineer with a solid foundation in programming languages and a comprehensive understanding of the web development cycle. I aim to contribute to intuitive, user-friendly software solutions while continuously learning cloud platforms.</p>
+      <p class="text-center lead">Software Developer</p>
+      <p class="text-center">I am a software engineer with a strong interest in building reliable and efficient applications. I focus on writing clean, maintainable code and enjoy solving technical challenges through logical thinking and collaboration.</p>
     </div>
   </section>
 
@@ -134,9 +177,10 @@
         <div class="category-title">Frameworks & Libraries</div>
         <div class="language-icons">
           <div class="language-box"><i class="fas fa-cubes"></i><span>NumPy</span></div>
+          <div class="language-box"><i class="fas fa-database"></i><span>pandas</span></div>
           <div class="language-box"><i class="fas fa-chart-line"></i><span>Matplotlib</span></div>
           <div class="language-box"><i class="fas fa-brain"></i><span>scikit-learn</span></div>
-          <div class="language-box"><i class="fas fa-database"></i><span>pandas</span></div>
+          <div class="language-box"><i class="fas fa-robot"></i><span>PyTorch</span></div>
         </div>
       </div>
 
@@ -144,10 +188,10 @@
       <div class="category-box">
         <div class="category-title">Tools</div>
         <div class="language-icons">
+          <div class="language-box"><i class="fas fa-code"></i><span>Visual Studio Code</span></div>
           <div class="language-box"><i class="fab fa-git-alt"></i><span>Git</span></div>
-          <div class="language-box"><i class="fab fa-github"></i><span>GitHub</span></div>
-          <div class="language-box"><i class="fas fa-code"></i><span>VS Code</span></div>
-          <div class="language-box"><i class="fas fa-cloud"></i><span>GCP</span></div>
+          <div class="language-box"><i class="fas fa-paint-brush"></i><span>Canva</span></div>
+          <div class="language-box"><i class="fas fa-cogs"></i><span>Jenkins</span></div>
         </div>
       </div>
 
@@ -155,9 +199,10 @@
       <div class="category-box">
         <div class="category-title">Platforms</div>
         <div class="language-icons">
-          <div class="language-box"><i class="fas fa-book"></i><span>Jupyter Notebook</span></div>
           <div class="language-box"><i class="fas fa-laptop-code"></i><span>PyCharm</span></div>
+          <div class="language-box"><i class="fas fa-book"></i><span>Jupyter Notebook</span></div>
           <div class="language-box"><i class="fas fa-code-branch"></i><span>Eclipse</span></div>
+          <div class="language-box"><i class="fas fa-cloud"></i><span>Google Colab</span></div>
         </div>
       </div>
     </div>
@@ -206,7 +251,7 @@
   <section class="section" id="achievements">
     <div class="container">
       <h2 class="text-center">Coding Proficiency</h2>
-      <div class="row justify-content-center">
+      <div class="coding-proficiency">
         <div class="col-md-4 text-center">
           <p><strong>LeetCode</strong><br><a href="https://leetcode.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" width="40"></a><br>600+ Problems</p>
         </div>
@@ -229,6 +274,7 @@
       <div class="category-box">
         <div class="category-title">Hand Gesture Games</div>
         <p>Implemented real-time hand tracking with 92% accuracy. Enhanced gesture recognition speed by using MediaPipe. Automated game controls via PyInput, with improved response.</p>
+        <p class="text-center"><strong>Tech Stack</strong></p> <!-- Removed colon -->
         <div class="language-icons d-flex flex-wrap justify-content-center">
           <div class="language-box m-1 small-box">Python</div>
           <div class="language-box m-1 small-box">OpenCV</div>
@@ -241,6 +287,7 @@
       <div class="category-box">
         <div class="category-title">Photographer’s Website</div>
         <p>Designed responsive layout, boosting user engagement. Customized gallery layout and hover effects, enhancing aesthetic appeal and usability. Integrated smooth animations, enhanced UI experience.</p>
+        <p class="text-center"><strong>Tech Stack</strong></p> <!-- Removed colon -->
         <div class="language-icons d-flex flex-wrap justify-content-center">
           <div class="language-box m-1 small-box">HTML</div>
           <div class="language-box m-1 small-box">CSS</div>
@@ -280,12 +327,26 @@
         </div>
       </form>
       <div class="text-center mt-4">
-        <a href="mailto:kaviyakr12@gmail.com" class="text-white mx-3"><i class="fas fa-envelope fa-lg"></i></a>
+        <a href="mailto:kaviya.kr12@gmail.com" class="text-white mx-3"><i class="fas fa-envelope fa-lg"></i></a>
         <a href="https://www.linkedin.com/in/kaviyaramesh/" target="_blank" class="text-white mx-3"><i class="fab fa-linkedin fa-lg"></i></a>
         <a href="https://github.com/kaviyakr12" target="_blank" class="text-white mx-3"><i class="fab fa-github fa-lg"></i></a>
       </div>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 All rights reserved by Kaviya K R</p>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+      document.body.classList.toggle('light-theme');
+      themeToggle.textContent = document.body.classList.contains('dark-theme') ? 'Light Theme' : 'Theme';
+    });
+  </script>
 
 </body>
 </html>
